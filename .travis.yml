@@ -10,5 +10,5 @@ before_install:
 
 
 script:
-  - ./mvnw clean install
+  - ./mvnw clean install -DskipTest=true
   - ./mvnw deploy jib:build -P deploy-docker
