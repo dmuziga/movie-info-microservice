@@ -10,6 +10,6 @@ before_install:
 
 
 script:
+  -   mvn package -DskipTests
   - ./mvnw clean install
-  - mvn package -DskipTests
   - ./mvnw deploy jib:build -P deploy-docker
