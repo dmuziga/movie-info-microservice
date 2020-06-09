@@ -80,7 +80,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <finalName>movie-info-microservice</finalName>
+                    <finalName>movie-info-microservice_new</finalName>
                 </configuration>
             </plugin>
         </plugins>
