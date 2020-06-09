@@ -17,6 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>2.2.2.RELEASE</spring-cloud.version>
+        <jar.finalName>movie-info-microservice</jar.finalName>
     </properties>
 
     <dependencies>
@@ -78,6 +79,13 @@
                             <tag>latest</tag>
                         </tags>
                     </to>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>movie-info-microservice</finalName>
                 </configuration>
             </plugin>
         </plugins>

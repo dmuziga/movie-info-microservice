@@ -11,5 +11,5 @@ install: true
 
 script:
   - ./mvnw clean install
-  - mvn clean package -DskipTests=true
+  - ./mvnw clean package -DskipTests=true
   - ./mvnw deploy jib:build -P deploy-docker
