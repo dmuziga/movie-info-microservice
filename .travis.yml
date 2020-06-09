@@ -7,7 +7,7 @@ before_install:
   - docker pull openjdk:8-jre-alpine
   - mvn -N io.takari:maven:wrapper
   - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-
+install: true
 
 script:
   - ./mvnw clean install
